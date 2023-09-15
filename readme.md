@@ -4,7 +4,8 @@ Projeto de teste de performance utilizando JMeter e plugins na API e página Web
 
 > **Apache Jmeter** é uma ferramenta Java puro de código aberto projetada para testar o desempenho de aplicativos e servidores web, medir a capacidade de carga e analisar o desempenho em diferentes cenários. Ele é amplamente utilizado para realizar testes de carga, testes de estresse, testes de desempenho, e outros tipos de testes de software.
 
- 
+<img src= "assets/Apache_JMeter" height=100 width=100/>
+<img src = "assets/quality-assurance" height=100 width=100/>
 
 ## Conceito de Teste de Performance 
 
@@ -30,5 +31,21 @@ Os **testes** mais comuns são:
  - [ ]  Resultado Esperado: Tempo de carregamento máximo de 3 segundos
 
 > 
+## Data Driven Test
 
-## Métricas avaliadas
+Através do “Configuração dos dados CSV” utilizamos a massa de dados para simular 5 usuários simultâneos cadastrando produtos em média de 5 segundos.
+
+## Algumas das Métricas Avaliadas
+-   Mínimo e Máximo:
+    -   Menor e maior tempo dentre toda a população de requisições que foram exercitadas.
+-   Média e Desvio Padrão
+    -   O valor médio e seu desvio para demonstrar a distribuição do valor médio da população.
+-   Percentil de 90 (Linha dos 90) e a Mediana
+    -   O valor máximo obtido para um percentual da população que contribua para a tomada de decisão. ( “90% dos nossos usuários tem um tempo máximo de resposta de 200ms” )
+
+---
+Apache JMeter
+ https://jmeter.apache.org/
+ 
+Plugins de métricas de teste
+https://jmeter-plugins.org/wiki/PluginsManager/
